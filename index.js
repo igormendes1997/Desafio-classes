@@ -1,32 +1,31 @@
-class Heroi{
-    constructor( nome, idade , tipo){
+class Heroi {
+    constructor(nome, idade, tipo) {
         this.nome = nome;
         this.idade = idade;
         this.tipo = tipo;
-        
     }
-    // Realizar um ataque
-    atacar(){
+
+    // Método para o herói atacar
+    atacar() {
         let ataque;
-
-        //Ataque com base no tipo do Herói
-        switch (this.tipo){
-            case "ninja":
-                ataque = "usou shuriken" ;
-              
-
+        
+        // Determina o tipo de ataque com base no tipo do herói
+        switch (this.tipo) {
+            case 'ninja':
+                ataque = 'usou shuriken';
+                break;
+            default:
+                ataque = 'usou poder desconhecido';
+                break;
         }
-
-    console.log('O heroi ${this.tipo} atacou usando ${ataque}') ;
+        
+        // Exibe a mensagem de ataque
+        console.log(`O ${this.tipo} atacou usando ${ataque}`);
     }
 }
 
-    
+// Criando uma instância de um herói ninja
+const meuHeroi = new Heroi('Igor', 26, 'ninja');
 
-
-
-
-    
-        
-    
-    
+// Realizando o ataque do herói
+meuHeroi.atacar();  // Saída: O ninja atacou usando shuriken
