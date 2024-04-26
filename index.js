@@ -20,6 +20,7 @@ class Heroi{
 
         }
 
-    console.log('O heroi ${this.tipo} atacou usando ${ataque}') ;
+    console.log (`O heroi Igor ${this.tipo} atacou usando ${ataque}`) ;
+    
     }
 }
