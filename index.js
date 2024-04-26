@@ -6,5 +6,20 @@ class Heroi{
         this.tipo = ninja;
         
     }
-    
+    // Realizar um ataque
+    atacar(){
+        let ataque;
+
+        //Ataque com base no tipo do Herói
+        switch (this.tipo){
+            case "ninja":
+                ataque = "usou shuriken" ;
+                break;
+                ataque= "atacaou" ;
+                break;
+
+        }
+
+    console.log ('O heroi Igor ${this.ninja} atacou usando ${ataque}') ;
+    }
 }
