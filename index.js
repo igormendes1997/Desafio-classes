@@ -1,9 +1,8 @@
-// Definir uma classe
 class Heroi{
     constructor( nome, idade , tipo){
-        this.nome = Igor;
-        this.idade = 26;
-        this.tipo = ninja;
+        this.nome = nome;
+        this.idade = idade;
+        this.tipo = tipo;
         
     }
     // Realizar um ataque
@@ -14,13 +13,20 @@ class Heroi{
         switch (this.tipo){
             case "ninja":
                 ataque = "usou shuriken" ;
-                break;
-                ataque= "atacaou" ;
-                break;
+              
 
         }
 
-    console.log (`O heroi Igor ${this.tipo} atacou usando ${ataque}`) ;
-    
+    console.log('O heroi ${this.tipo} atacou usando ${ataque}') ;
     }
 }
+
+    
+
+
+
+
+    
+        
+    
+    
